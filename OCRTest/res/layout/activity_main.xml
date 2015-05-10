@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="PAYU MONEY"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/black"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="E Bills"
+        android:textColor="@android:color/black"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btnBrowse_Bills"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:background="@drawable/roundshape"
+            android:text="Browse Bills" />
+
+        <Button
+            android:textColor="@android:color/white"
+            android:id="@+id/btnSearch_Bills"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundshape"
+            android:layout_height="wrap_content"
+            android:text="Search Bills" />
+
+        <Button
+            android:textColor="@android:color/white"
+            android:id="@+id/btnAdd_Bills"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:background="@drawable/roundshape"
+            android:layout_height="wrap_content"
+            android:text="Add Bills" />
+
+        <Button
+            android:textColor="@android:color/white"
+            android:id="@+id/btnViewBills"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundshape"
+            android:layout_height="wrap_content"
+            android:onClick="viewBill"
+            android:text="View Bills" />
+
+        <Button
+            android:textColor="@android:color/white"
+            android:id="@+id/button1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundshape"
+            android:layout_width="match_parent" android:onClick="addTag"
+            android:layout_height="wrap_content"
+            android:text="Add tag" />
+    </LinearLayout>
+
+</RelativeLayout>

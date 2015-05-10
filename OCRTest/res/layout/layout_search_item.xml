@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="match_parent"
+          android:id="@+id/search"
+          android:layout_height="match_parent"
+          style="?android:attr/textAppearanceLarge"
+          android:text="@string/abc_action_bar_home_description"
+          android:padding="10dp">
+
+</TextView>

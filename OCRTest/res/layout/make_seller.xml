@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/rl3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="Enter Seller Details"
+                android:textSize="30dp" />
+
+            <TextView
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Seller Name" />
+
+            <EditText
+                android:id="@+id/editSellerName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fill your seller name"
+                android:textSize="18dp" />
+
+            <TextView
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Seller Address" />
+
+            <EditText
+                android:id="@+id/editSellerAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editSellerName"
+                android:layout_marginBottom="10dp"
+                android:hint="Fill your seller Address" />
+
+            <TextView
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Seller State" />
+
+            <EditText
+                android:id="@+id/editSellerState"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editSellerName"
+                android:layout_marginBottom="10dp"
+                android:hint="Fill your seller State" />
+
+            <TextView
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Seller City" />
+
+            <EditText
+                android:id="@+id/editSellerCity"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editSellerAddress"
+                android:layout_marginBottom="10dp"
+                android:hint="Fill your seller city" />
+
+            <TextView
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Seller Pin" />
+
+            <EditText
+                android:id="@+id/editSellerPin"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editSellerCity"
+                android:layout_marginBottom="10dp"
+                android:hint="Fill your seller pin"
+                android:inputType="number" />
+
+            <TextView
+                style="?android:attr/textAppearanceLarge"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Invoice No" />
+
+            <EditText
+                android:id="@+id/editSellerInvoice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editSellerCity"
+                android:layout_marginBottom="10dp"
+                android:hint="Fill your invoice no"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl3"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="10dp"
+            android:padding="15dp"
+            android:text="Save Seller" />
+    </RelativeLayout>
+
+</ScrollView>
